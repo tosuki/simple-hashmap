@@ -10,6 +10,10 @@ struct Hashmap {
     unsigned int length;
 };
 
-struct Hashmap create_hashmap(int capacity, int length);
+struct Hashmap *create_hashmap(int capacity);
+void free_hashmap(struct Hashmap *hashmap);
+
+void hashmap_insert(struct Hashmap *hashmap, char *key, int value);
+struct Node *hashmap_get(struct Hashmap *hashmap, char *key);
 
 #endif

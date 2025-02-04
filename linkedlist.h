@@ -8,6 +8,7 @@ struct Node {
 };
 
 
-struct Node pair(char *key, int value);
+struct Node *pair(char *key, int value, struct Node *tail);
+void free_node(struct Node *node);
 
 #endif
