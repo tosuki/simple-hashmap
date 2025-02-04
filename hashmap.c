@@ -7,7 +7,7 @@
 struct Hashmap create_hashmap(int capacity, int length) {
     struct Hashmap hashmap;
     
-    hashmap.values = malloc(sizeof(struct Node));
+    hashmap.values = calloc(capacity, sizeof(struct Node*));
     
     if (hashmap.values == NULL) {
         exitWithMessage("Failed to allocate memory to the hashmap");
