@@ -16,6 +16,7 @@ key("apple") -> index 4
 key("abcde") -> index 4
 [0, 0, 0, 0, (LinkedList with values apple and abcde)]
 ```
+and storing linkedlist in an array to store two keys with the same index, its ok but takes out the advantage of the fast read we got in arrays, so its wise to avoid collisions as much as possible
 
 ### How is it useful in programming?
 - TO DO
