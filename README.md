@@ -8,6 +8,7 @@ Hashmap are a type of data structure based on list, where we map a string value 
 </p>
 However, we need to think about many problems that this generate:
 - Collisions, two different keys give the same index
+
 ```
 key("apple") -> index 4
 key("abcde") -> index 4
