@@ -3,12 +3,15 @@ The idea behind this project is to implement a simple hashmap
 
 ### What is a hashmap?
 Hashmap are a type of data structure based on list, where we map a string value to a index number of that list. For example:
-```
-[1,2,3,4,5]
-key("apple") -> index 4
-```
+<p align="center">
+    <img src="./assets/hashmap.png"/>
+</p>
 However, we need to think about many problems that this generate:
 - Collisions, two different keys give the same index
+<p align="center">
+    <img src="./assets/collision.png"/>
+</p>
+
 
 And due to the colission problem, another problem occur, which is dynamic allocation for the hashmap, because when a collision happen, we do this:
 ```
