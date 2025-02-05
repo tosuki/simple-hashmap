@@ -55,7 +55,6 @@ struct Node *hashmap_get(struct Hashmap *hashmap, char* key) {
     if (hashmap->values[index] == NULL) {
         return NULL;
     }
-
-
-    return NULL;
+    
+    return get_pair(hashmap->values[index], key);
 }
